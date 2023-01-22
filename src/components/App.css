@@ -1,0 +1,9 @@
+#tuky{
+    font-size: 25px;
+    margin-right: 5px;    
+    color:rgba(255, 255, 255, 0.712);
+}
+
+#tuky:hover{    
+    color:white;
+}
