@@ -7,3 +7,10 @@
 #tuky:hover{    
     color:white;
 }
+
+.cardProductos {
+    align-items: ceter;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
