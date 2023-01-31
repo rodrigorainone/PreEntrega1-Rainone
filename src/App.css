@@ -14,3 +14,23 @@
     gap: 15px;
     margin-top: 20px;
 }
+
+.cardBody {
+    background-color: white;
+    margin-bottom: 3px;
+    text-align: center;
+}
+.cardProducto {
+    width: 18rem;
+    margin: 4px;
+    background-color: hsl(0, 0%, 97%);
+}
+
+img {
+    margin-top: 5px;
+}
+
+.itemDetail{
+    max-width: 540px;
+    margin-top: 20px;  
+}
