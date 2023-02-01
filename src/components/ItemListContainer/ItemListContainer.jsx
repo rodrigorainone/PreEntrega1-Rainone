@@ -8,12 +8,27 @@ const ItemListContainer = () => {
         const [productos,setProductos] = useState([]);
         
         const {idCategoria} = useParams()
-        useEffect(()=>{
+        useEffect(()=>{ 
             if (idCategoria){
+                let aux;
+                switch (idCategoria) {
+                    case 'Computadoras':
+                        aux=1;
+                      break;
+                    case 'Celulares':
+                        aux=2;
+                    break;                        
+                    case 'Televisores':
+                        aux=3;
+                      break;
+                    case 'Electronica':
+                        aux=4;
+                    break;
+                }
                 fetch('../json/productos.json')
                 .then(response => response.json())
-                .then(items => {   
-                    const products = items.filter(prod => prod.idCategoria ===parseInt(idCategoria))                
+                .then(items => {                    
+                    const products = items.filter(prod => prod.idCategoria ===aux)                
                     const productsList = Itemlist({products})
                     setProductos(productsList)               
                 })

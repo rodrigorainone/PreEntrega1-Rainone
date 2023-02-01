@@ -6,10 +6,10 @@ const Categorias = () => {
               Categorias
             </a>
             <ul className="dropdown-menu">
-              <li><Link className="dropdown-item" to={"/category/1"}>Computadoras</Link></li>
-              <li><Link className="dropdown-item" to={"/category/2"}>Celulares</Link></li>              
-              <li><Link className="dropdown-item" to={"/category/3"}>Televisores</Link></li>
-              <li><Link className="dropdown-item" to={"/category/4"}>Electronica</Link></li>
+              <li><Link className="dropdown-item" to={"/category/Computadoras"}>Computadoras</Link></li>
+              <li><Link className="dropdown-item" to={"/category/Celulares"}>Celulares</Link></li>              
+              <li><Link className="dropdown-item" to={"/category/Televisores"}>Televisores</Link></li>
+              <li><Link className="dropdown-item" to={"/category/Electronica"}>Electronica</Link></li>
             </ul>
         </li>       
     );
